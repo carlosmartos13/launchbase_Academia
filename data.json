@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://martos.com.br",
+      "name": "Carlos Martos",
+      "birth": 718934400000,
+      "gender": "M",
+      "services": "Musculação, Crossfit",
+      "created_at": 1581866049841
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://martos.com.br",
+      "name": "Guilherme Saraiva",
+      "birth": 687312000000,
+      "gender": "M",
+      "services": "Musculação, Crossfit",
+      "created_at": 1581866075981
+    }
+  ]
+}
