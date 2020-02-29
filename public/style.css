@@ -169,7 +169,7 @@ input::placeholder {
     font-weight: normal;
 }
 
-button[type="submit"]{
+button[type="submit"], a.button{
     padding: 8px 32px;
     background-color: var(--primary-color);
     color: white;
@@ -177,4 +177,50 @@ button[type="submit"]{
     margin-top: 32px;
     width: 100%;
     font-size: 16px;
+}
+
+a.button{
+  
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+#form-delete button[type='submit']{
+    margin-top: 8px;
+    background-color: rgb(197, 52, 27);
+
+}
+
+/* INDEX INSTRUCTORS */
+
+.table-container{
+    display: block;
+    padding: 40px;
+    box-sizing: border-box;
+
+
+
+}
+
+.table-container table {
+    border-spacing: 0;
+}
+.table-container thead tr th{
+    text-align: left;
+
+}
+
+td, th {
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9;
+
+}
+
+tbody tr:last-child {
+    border-bottom: none
+    
 }
