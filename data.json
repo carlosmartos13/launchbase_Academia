@@ -1,12 +1,58 @@
 {
-  "instructors": [
+  "members": [
     {
       "id": 1,
       "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
       "name": "Carlos Martos",
+      "email": "carlos@gmail.com",
       "birth": 718934400000,
       "gender": "M",
-      "services": "Musculação, Crossfit",
+      "blood": "A1",
+      "weight": "90",
+      "height": "160"
+    },
+    {
+      "id": "[object Object]1",
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Simone Vieira",
+      "email": "carlos@gmail.com",
+      "birth": 971395200000,
+      "gender": "F",
+      "blood": "AB0",
+      "weight": "90",
+      "height": "160"
+    },
+    {
+      "id": "[object Object]1",
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Micheli",
+      "email": "carlos@gmail.com",
+      "birth": 971395200000,
+      "gender": "F",
+      "blood": "AB0",
+      "weight": "90",
+      "height": "160"
+    },
+    {
+      "id": "[object Object]1",
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Vitoria Souza",
+      "email": "carlos@gmail.com",
+      "birth": 971395200000,
+      "gender": "F",
+      "blood": "AB0",
+      "weight": "90",
+      "height": "160"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Carlos Martos JR",
+      "birth": 718934400000,
+      "gender": "M",
+      "services": "Musculação, Crossfit, Natação",
       "created_at": 1582934300000
     },
     {
