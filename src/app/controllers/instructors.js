@@ -18,9 +18,9 @@ module.exports = {
             limit,
             offset,
             callback(instructors){
-                const pagination = {
-                     total: Math.cell( instructors[0].total / limit),
-                      page
+                    const pagination = {
+                        total: Math.cell( instructors[0].total / limit),
+                        page
                 }
 
                 return res.render("instructors/index", { instructors, pagination, filter })

@@ -40,4 +40,4 @@ function paginate(selectedPage, totalPages){
     const total = +pagination.dataset.total;
     const pages = paginate(page, total)
 
-    console.log(pages)
+    console.log(page)

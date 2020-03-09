@@ -1,7 +1,7 @@
 const db = require('../../config/db')
 const { age, date } = require("../../lib/utils")
 
-const Intl = require('intl')
+
 module.exports = {
     all(callback) {
 
@@ -124,22 +124,25 @@ module.exports = {
             totalQuery = `(
                 select count(*) from instructors  
                 ${filterQuery}
-                ) as total`
+                ) AS total`
         }
 
         query = `SELECT instructors.*, ${totalQuery}, count(members) as total_students 
             from instructors 
-            left join members on (instructors.id = members.instructor_id))
+            left join members on (instructors.id = members.instructor_id)
             ${filterQuery}
             GROUP by instructors.id LIMIT $1 OFFSET $2
           
             
          `
+         
 
             db.query(query, [limit, offset], function(err, results){
-                if (err) throw 'DataBase Error!'
+                if (err) throw `DataBase Error! ${err}`
 
-                callback(results.rows)
+                callback(results)
+              
+               
 
             })
 
