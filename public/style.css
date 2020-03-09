@@ -247,7 +247,7 @@ tbody tr td:first-child span {
 
 }
 
-tbody tr td:last-child a, .table-container > a {
+tbody tr td:last-child a, button, a.button .table-container > a {
     background-color: var(--primary-color);
     padding: 8px 16px;
     text-decoration: none;
@@ -259,7 +259,7 @@ tbody tr td:last-child a, .table-container > a {
 
 
 }
-tbody tr td:last-child a:hover, .table-container > a:hover{
+tbody tr td:last-child a:hover, button:hover, a.button:hover, .table-container > a:hover{
     opacity: 85%;
     box-shadow: 1px 1px 6px -4px black;
 }
@@ -276,4 +276,39 @@ a.novo {
     display: inline-block;
     margin-bottom: 16px;
 
+}
+
+
+/* FILTER */
+.table-container .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 32px;
+
+}
+
+.table-container .header a {
+    width: 120px;
+    margin: 0;
+}
+
+.table-container .header form {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    align-items: center;
+    grid-gap: 8px;
+    
+}
+.table-container .header input{
+    border: 1px solid #eee;
+    padding: 4px 8px;
+    box-sizing: border-box;
+
+
+}
+
+.table-container .header form button {
+
+    margin: 0;
 }
