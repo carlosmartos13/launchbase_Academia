@@ -19,7 +19,7 @@ module.exports = {
             offset,
             callback(instructors){
                     const pagination = {
-                        total: Math.cell( instructors[0].total / limit),
+                        total: Math.ceil( instructors[0].total / limit),
                         page
                 }
 
